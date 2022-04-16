@@ -2,6 +2,7 @@
 $textColor:#000;
 //? ######################################## CSS RESET ################################################
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -18,7 +19,8 @@ $textColor:#000;
     height: 100vh;
     background-color: #FCF6F4;
     background-color: red;
-    font-family:"'Source Sans Pro', sans-serif";
+    font-family:'Karla', sans-serif ;
+
     .power{
         width: 4rem;
         left: 50%;
@@ -76,6 +78,16 @@ $textColor:#000;
         top: 50%;
         // animation: round linear infinite 1.5s;
         transform: translate(50%,-70%);
+    }
+    .tas{
+        text-decoration: none;
+        font-size: 3rem;
+        left: 2%;
+        // font-family: ;
+        top: 2%;
+        color: $textColor;
+        position: fixed;
+
     }
     .icon{
         width: 3.5rem;

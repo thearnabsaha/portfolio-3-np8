@@ -8,6 +8,7 @@ const index = () => {
       <a href="" className="skl">My Skills.</a>
       <a href="" className="say">Say Hi...</a>
       <a href="" className="wrk">Work</a>
+      <a href="" className="tas">TAS</a>
       <a href=""><YinYang className="yin" /></a>
         <div className="icon">
           <a href=""><Github className="git ic" /></a>
