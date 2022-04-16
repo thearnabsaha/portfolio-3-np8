@@ -1,0 +1,29 @@
+//? ######################################## CSS RESET ################################################
+$textColor:#000;
+//? ######################################## CSS RESET ################################################
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Roboto', sans-serif;
+    }
+//? ######################################## HOME PAGE ################################################
+#index{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FCF6F4;
+    background-color: red;
+    .power{
+        width: 4rem;
+        left: 50%;
+        position: fixed;
+        transform: translate(-50%,50%);
+        border: 3px solid $textColor;
+        padding: .5rem;
+        border-radius: 3rem;
+    }
+}
