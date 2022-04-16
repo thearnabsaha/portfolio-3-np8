@@ -7,6 +7,7 @@ const index = () => {
       <a href="" className="abt">About.</a>
       <a href="" className="skl">My Skills.</a>
       <a href="" className="say">Say Hi...</a>
+      <a href="" className="wrk">Work</a>
       </div>
     </>
   );
