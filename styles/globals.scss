@@ -1,7 +1,7 @@
 //? ######################################## CSS RESET ################################################
 $textColor:#000;
 //? ######################################## CSS RESET ################################################
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Karla:wght@200;300;400;500;600;700;800&family=Ubuntu+Mono:wght@400;700&display=swap');
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ $textColor:#000;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Roboto', sans-serif;
     }
-//? ######################################## HOME PAGE ################################################
+//? ######################################## APP PAGE ################################################
 .power{
     width: 4rem;
     left: 50%;
@@ -47,6 +47,18 @@ $textColor:#000;
         position: fixed;
     }
 }
+.tas{
+    text-decoration: none;
+    font-size: 3rem;
+    left: 2%;
+    top: 2%;
+    color: $textColor;
+    position: fixed;
+    font-family: 'Babylonica', cursive;
+
+}
+//? ######################################## HOME PAGE ################################################
+
 #index{
     width: 100vw;
     height: 100vh;
@@ -117,16 +129,7 @@ $textColor:#000;
         padding-top: 1rem;
         font-weight: 400;
     }
-    .tas{
-        text-decoration: none;
-        font-size: 3rem;
-        left: 2%;
-        top: 2%;
-        color: $textColor;
-        position: fixed;
-        font-family: 'Babylonica', cursive;
 
-    }
     
 }
 @keyframes roundss {
@@ -134,3 +137,66 @@ $textColor:#000;
     to{ transform: rotate(360deg);}
 }
 //? ######################################## SKILLS PAGE ################################################
+#skills{
+    background-color: #FCF6F4;
+    .container{
+        font-family: 'Ubuntu Mono',monospace;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        width: 90vw;
+        margin: auto;
+        .card{
+            border: 3px solid $textColor;
+            width: 35vw;
+            height: 60vh;
+            padding:3rem;
+            z-index: 5;
+            &:hover{
+                background-color: #000;
+                color: #FCF6F4;
+                .webd{
+                    fill: #FCF6F4;
+                }
+            }
+            .webd{
+                width: 4rem;
+                margin-right: 1rem;
+            }
+            h1{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Ubuntu Mono',monospace;
+                font-size: 3rem;
+            }
+            p{
+                font-family: 'Ubuntu Mono',monospace;
+                margin-top: 3rem;
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+            h2{
+                font-family: 'Ubuntu Mono',monospace;
+                margin-top: 1.5rem;
+                font-size: 2.5rem;
+            }
+            ul{
+                li{
+                    font-family: 'Ubuntu Mono',monospace;
+                    margin-left: 3rem;
+                    font-size: 2rem;
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+    .big{
+        font-size: 13rem;
+        position: fixed;
+        top: 4%;
+        left: 5%;
+        color: rgba(0, 0, 0, 0.164);
+    }
+}
