@@ -6,6 +6,7 @@ const index = () => {
       <a href=""><PowerBtn className="power" /></a>
       <a href="" className="abt">About.</a>
       <a href="" className="skl">My Skills.</a>
+      <a href="" className="say">Say Hi...</a>
       </div>
     </>
   );

@@ -29,8 +29,9 @@ $textColor:#000;
         border-radius: 3rem;
     }
     .abt{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-decoration: none;
+        font-weight: 500;
         color: $textColor;
         bottom: 0;
         position: fixed;
@@ -38,12 +39,22 @@ $textColor:#000;
         transform: translate(-50%,-50%);
     }
     .skl{
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-decoration: none;
         color: $textColor;
         bottom: 0;
         position: fixed;
         right: 20%;
         transform: translate(-50%,-50%);
+        font-weight: 500;
+    }
+    .say{
+        font-size: 2.5rem;
+        text-decoration: none;
+        color: $textColor;
+        position: fixed;
+        right: 0;
+        transform: translate(-50%,70%);
+        font-weight: 500;
     }
 }
