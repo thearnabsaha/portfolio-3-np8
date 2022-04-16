@@ -4,7 +4,7 @@ import { PowerBtn, YouTube, Github, Facebook,Twitter, YinYang } from '../Data/al
 
 function MyApp({ Component, pageProps }) {
   return <>
-        <Link href="/Components/About"><PowerBtn className="power" /></Link>
+        <Link href="/"><PowerBtn className="power" /></Link>
         <Component {...pageProps} />
   </>
 }

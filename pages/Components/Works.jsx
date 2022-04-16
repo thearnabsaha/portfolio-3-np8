@@ -1,7 +1,7 @@
 const Works = () => {
     return (
         <div>
-            Enter
+            Enter works
         </div>
     );
 }
