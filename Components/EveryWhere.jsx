@@ -4,7 +4,7 @@ import { PowerBtn, YouTube, Github, Facebook,Twitter, YinYang } from '../Data/al
 const EveryWhere = () => {
     return (
         <div>
-             <Link href="/About" ><motion.p className="tas" initial={{y:-100,x:10}} animate={{y:0,x:10,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> TAS</motion.p></Link>
+             <Link href="/About" passHref><motion.p className="tas" initial={{y:-100,x:10}} animate={{y:0,x:10,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> TAS</motion.p></Link>
             <div className="icon">
             <a href=""><motion.div initial={{scale:0}} animate={{scale:[0,1,1.5,1]}} transition={{type:'spring', duration:1, delay:1}}><Github className="git ic" /></motion.div></a>
             <a href=""><motion.div initial={{scale:0}} animate={{scale:[0,1,1.5,1]}} transition={{type:'spring', duration:1, delay:1.2}}><Twitter className="twt ic" /></motion.div></a>

@@ -25,7 +25,7 @@ const Skills = () => {
                     </motion.div>
                     <motion.div className="card" initial={{y:-1000}} animate={{y:0,transition:{duration:1,delay:.5,type:"spring"}}}>
                         <h1><Develope className='webd'/>Blockchain Developer</h1>
-                        <p>I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.</p>
+                        <p>I value business or brand for which im creating, thus i enjoy bringing new ideas to life.</p>
                         <h2>Skills:</h2>
                         <ul>
                             <li>Smart Contracts Developer</li>

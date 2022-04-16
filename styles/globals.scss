@@ -200,3 +200,33 @@ $textColor:#000;
         color: rgba(0, 0, 0, 0.164);
     }
 }
+//? ######################################## ABOUT PAGE ################################################
+#about{
+    width: 100vw;
+    .container{
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .left{
+            width: 55vw;
+            margin-left: 8rem;
+            border: #000 3px solid;
+            padding: 5rem;
+            p{
+                font-family: 'Ubuntu Mono',monospace;
+                font-size: 2.5rem;
+                padding: 2rem;
+            }
+        }
+        .right{
+            animation: float 2s ease-in-out infinite;
+            @keyframes float {
+                0% { transform: translateY(-10px) }
+                50% { transform: translateY(15px) translateX(15px) }
+                100% { transform: translateY(-10px) }
+
+            }
+        }
+    }
+}

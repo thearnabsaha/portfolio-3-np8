@@ -4,7 +4,7 @@ import { PowerBtn} from '../Data/allsvg';
 import { AnimatePresence } from 'framer-motion';
 function MyApp({ Component, pageProps,router }) {
   return <>
-        <Link href="/"><PowerBtn className="power" /></Link>
+        <Link href="/" passHref><PowerBtn className="power" /></Link>
         <AnimatePresence exitBeforeEnter >
         <Component {...pageProps} key={router.route}/>
         </AnimatePresence>
