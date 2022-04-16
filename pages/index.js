@@ -1,4 +1,4 @@
-import { PowerBtn, YouTube } from '../Data/allsvg';
+import { PowerBtn, YouTube, Github, Facebook,Twitter, YinYang } from '../Data/allsvg';
 const index = () => {
   return (
     <>
@@ -8,6 +8,14 @@ const index = () => {
       <a href="" className="skl">My Skills.</a>
       <a href="" className="say">Say Hi...</a>
       <a href="" className="wrk">Work</a>
+      <a href=""><YinYang className="yin" /></a>
+        <div className="icon">
+          <a href=""><Github className="git ic" /></a>
+          <a href=""><Twitter className="twt ic" /></a>
+          <a href=""><Facebook className="fb ic" /></a>
+          <a href=""><YouTube className="yt ic" /></a>
+          <div className="line"></div>
+        </div>
       </div>
     </>
   );

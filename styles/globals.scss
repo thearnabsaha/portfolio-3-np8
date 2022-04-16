@@ -49,12 +49,12 @@ $textColor:#000;
         font-weight: 500;
     }
     .say{
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-decoration: none;
         color: $textColor;
         position: fixed;
         right: 0;
-        transform: translate(-50%,70%);
+        transform: translate(-50%,100%);
         font-weight: 500;
     }
     .wrk{
@@ -67,4 +67,39 @@ $textColor:#000;
         transform: translate(-50%,70%) rotate(90deg);
         font-weight: 500;
     }
+    .yin{
+        width: 20rem;
+        text-decoration: none;
+        color: $textColor;
+        position: fixed;
+        right: 50%;
+        top: 50%;
+        // animation: round linear infinite 1.5s;
+        transform: translate(50%,-70%);
+    }
+    .icon{
+        width: 3.5rem;
+        left: 10px;
+        position: fixed;
+        transform: translate(50%,50%);
+        bottom: 20%;
+        padding: .5rem;
+        border-radius: 3rem;
+        margin-bottom: 10rem;
+        .ic{
+            padding-bottom: 2rem;
+        }
+        .line{
+            height: 15rem;
+            width: 3px;
+            text-align: center;
+            background-color: $textColor;
+            left: 40%;
+            position: fixed;
+        }
+    }
+}
+@keyframes round {
+    from{ transform: rotate(0);}
+    to{ transform: rotate(360deg);}
 }
