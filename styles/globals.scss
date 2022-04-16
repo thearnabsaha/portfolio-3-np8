@@ -1,7 +1,6 @@
 //? ######################################## CSS RESET ################################################
 $textColor:#000;
 //? ######################################## CSS RESET ################################################
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;700&family=Karla:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 *,*::after,*::before{
     margin: 0;
@@ -14,13 +13,25 @@ $textColor:#000;
     font-family: 'Roboto', sans-serif;
     }
 //? ######################################## HOME PAGE ################################################
+.power{
+    width: 4rem;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%,50%);
+    border: 3px solid $textColor;
+    padding: .5rem;
+    border-radius: 3rem;
+    top: 0%;
+    &:hover{
+        background-color: rgba(27, 233, 27, 0.339);
+    }
+}
 #index{
     width: 100vw;
     height: 100vh;
     background-color: #FCF6F4;
-    background-color: red;
     font-family:'Karla', sans-serif ;
-
+    flex-direction: column-reverse;
     .power{
         width: 4rem;
         left: 50%;
@@ -29,6 +40,7 @@ $textColor:#000;
         border: 3px solid $textColor;
         padding: .5rem;
         border-radius: 3rem;
+        top: 0%;
     }
     .abt{
         font-size: 2.5rem;
@@ -58,6 +70,7 @@ $textColor:#000;
         right: 0;
         transform: translate(-50%,100%);
         font-weight: 500;
+        top: 0%;
     }
     .wrk{
         font-size: 2.5rem;
@@ -69,15 +82,19 @@ $textColor:#000;
         transform: translate(-50%,70%) rotate(90deg);
         font-weight: 500;
     }
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .yin{
         width: 20rem;
         text-decoration: none;
         color: $textColor;
-        position: fixed;
-        right: 50%;
-        top: 50%;
-        // animation: round linear infinite 1.5s;
-        transform: translate(50%,-70%);
+        animation: roundss linear infinite 1.5s;
+    }
+    h6{
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        font-weight: 400;
     }
     .tas{
         text-decoration: none;
@@ -86,7 +103,7 @@ $textColor:#000;
         top: 2%;
         color: $textColor;
         position: fixed;
-        font-family:'Karla', sans-serif ;
+        font-family: 'Babylonica', cursive;
 
     }
     .icon{
@@ -111,7 +128,7 @@ $textColor:#000;
         }
     }
 }
-@keyframes round {
+@keyframes roundss {
     from{ transform: rotate(0);}
     to{ transform: rotate(360deg);}
 }

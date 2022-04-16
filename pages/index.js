@@ -1,15 +1,16 @@
 import { PowerBtn, YouTube, Github, Facebook,Twitter, YinYang } from '../Data/allsvg';
+import Link from 'next/link';
 const index = () => {
   return (
     <>
       <div id="index" >
-      <a href=""><PowerBtn className="power" /></a>
-      <a href="" className="abt">About.</a>
-      <a href="" className="skl">My Skills.</a>
-      <a href="" className="say">Say Hi...</a>
-      <a href="" className="wrk">Work</a>
-      <a href="" className="tas">TAS</a>
-      <a href=""><YinYang className="yin" /></a>
+        <Link href="/Components/About" ><p className="abt" > About.</p></Link>
+        <Link href="/Components/About" ><p className="skl" > My Skills.</p></Link>
+        <Link href="/Components/About" ><p className="say" > Say Hi...</p></Link>
+        <Link href="/Components/About" ><p className="wrk" > Work</p></Link>
+        <Link href="/Components/About" ><p className="tas" > TAS</p></Link>
+        <h6>click here!</h6>
+        <YinYang className="yin" />
         <div className="icon">
           <a href=""><Github className="git ic" /></a>
           <a href=""><Twitter className="twt ic" /></a>
