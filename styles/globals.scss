@@ -57,6 +57,13 @@ $textColor:#000;
     font-family: 'Babylonica', cursive;
 
 }
+.big{
+    font-size: 13rem;
+    position: fixed;
+    top: 4%;
+    left: 5%;
+    color: rgba(0, 0, 0, 0.164);
+}
 //? ######################################## HOME PAGE ################################################
 
 #index{
@@ -191,13 +198,6 @@ $textColor:#000;
                 }
             }
         }
-    }
-    .big{
-        font-size: 13rem;
-        position: fixed;
-        top: 4%;
-        left: 5%;
-        color: rgba(0, 0, 0, 0.164);
     }
 }
 //? ######################################## ABOUT PAGE ################################################
