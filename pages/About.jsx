@@ -14,11 +14,7 @@ const About = () => {
                         <p>I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.</p>
                     </div>
                     <div className="right">
-                        {/* <Image src={SPMAN} width="300" height="500"  alt='arnabs image' className="img"/> */}
-                        {/* <Image src="/../public/assets/Images/spaceman.png" width="300" height="500" layout='raw' alt='arnabs image' className="img"/> */}
-                        {/* <img src={SPMAN} alt="arnab" /> */}
-                        {/* <img src={SPMAN} alt="spaceman" /> */}
-
+                        <Image src={SPMAN} width="300" height="500"  alt='arnabs image' className="img"/>
                     </div>
                 </div>
             </motion.div>
