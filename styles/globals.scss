@@ -26,6 +26,27 @@ $textColor:#000;
         background-color: rgba(27, 233, 27, 0.339);
     }
 }
+.icon{
+    width: 3.5rem;
+    left: 10px;
+    position: fixed;
+    transform: translate(50%,50%);
+    bottom: 20%;
+    padding: .5rem;
+    border-radius: 3rem;
+    margin-bottom: 10rem;
+    .ic{
+        padding-bottom: 2rem;
+    }
+    .line{
+        height: 15rem;
+        width: 3px;
+        text-align: center;
+        background-color: $textColor;
+        left: 40%;
+        position: fixed;
+    }
+}
 #index{
     width: 100vw;
     height: 100vh;
@@ -106,27 +127,7 @@ $textColor:#000;
         font-family: 'Babylonica', cursive;
 
     }
-    .icon{
-        width: 3.5rem;
-        left: 10px;
-        position: fixed;
-        transform: translate(50%,50%);
-        bottom: 20%;
-        padding: .5rem;
-        border-radius: 3rem;
-        margin-bottom: 10rem;
-        .ic{
-            padding-bottom: 2rem;
-        }
-        .line{
-            height: 15rem;
-            width: 3px;
-            text-align: center;
-            background-color: $textColor;
-            left: 40%;
-            position: fixed;
-        }
-    }
+    
 }
 @keyframes roundss {
     from{ transform: rotate(0);}
