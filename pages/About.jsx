@@ -1,6 +1,7 @@
 import { motion} from 'framer-motion'
 import EveryWhere from '../Components/EveryWhere';
-
+import Image from 'next/image';
+import SPMAN from '../public/assets/Images/spaceman.png';
 const About = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const About = () => {
                         <p>I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.</p>
                     </div>
                     <div className="right">
-                        
+                        <Image src={SPMAN} width="400" height="400" objectFit='cover' alt='arnabs image' className="img"/>
                     </div>
                 </div>
             </motion.div>
