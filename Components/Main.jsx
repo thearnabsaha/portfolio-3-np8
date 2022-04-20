@@ -13,7 +13,7 @@ const Main = () => {
           <Link href="/About" passHref><motion.p className="abt" initial={{y:100}} animate={{y:-30,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> About.</motion.p></Link>
           <Link href="/Skills" passHref><motion.p className="skl" initial={{y:100}} animate={{y:-30,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> My Skills.</motion.p></Link>
           <Link passHref href={{pathname:"mailto:thearnabsaha201@gmail.com"}} target="_blank"><motion.p className="say" initial={{y:-100,x:-15}} animate={{y:30,x:-40,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> Say Hi...</motion.p></Link>
-          <Link href="/About" passHref><motion.p className="wrk" initial={{x:100,rotate:(90)}} animate={{x:-40,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> Work</motion.p></Link>
+          <Link href="/Works" passHref><motion.p className="wrk" initial={{x:100,rotate:(90)}} animate={{x:-40,transition: { type:'spring', duration: 1.5, delay:1}}} whileHover={{scale:1.1}} whileTap={{scale:.9}}> Work</motion.p></Link>
           <h6>click here!</h6>
           <a onClick={()=>{setClick(!click)}}><YinYang className="yin"/></a>
         </motion.div>

@@ -1,8 +1,14 @@
+import EveryWhere from "../Components/EveryWhere";
+import WorkCard from "../Components/WorkCard";
+
 const Works = () => {
     return (
-        <div>
-            Enter works
-        </div>
+        <>
+            <div id="works">
+            <EveryWhere/>
+                <WorkCard/>
+            </div>
+        </>
     );
 }
 
