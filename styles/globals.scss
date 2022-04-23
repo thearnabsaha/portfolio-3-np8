@@ -48,7 +48,6 @@ $textColor:#000;
         background-color: $textColor;
         left: 40%;
         position: fixed;
-        background-color: green;
     }
 }
 .tas{
@@ -140,8 +139,6 @@ $textColor:#000;
         padding-top: 1rem;
         font-weight: 400;
     }
-
-    
 }
 @keyframes roundss {
     from{ transform: rotate(0);}
@@ -207,6 +204,8 @@ $textColor:#000;
 //? ######################################## ABOUT PAGE ################################################
 #about{
     width: 100vw;
+    background-color: #000;
+    color: #FCF6F4;
     .container{
         height: 100vh;
         display: flex;

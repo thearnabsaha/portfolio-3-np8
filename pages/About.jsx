@@ -1,12 +1,12 @@
 import { motion} from 'framer-motion'
-import EveryWhere from '../Components/EveryWhere';
+import EveryWhereDark from '../Components/EveryWhereDark';
 import SPMAN from '../public/assets/Images/spaceman.png';
 const About = () => {
     return (
         <>
             <motion.div id="about" exit={{y:-1000,transition:{duration:.5}}}>
-                <motion.h5 className='big' initial={{x:-1000}} animate={{x:0,transition:{duration:1,delay:.5,type:"spring"}}}>About</motion.h5>
-                <EveryWhere/>
+                <motion.h5 className='big' initial={{x:-1000}} animate={{x:0,color: "#fcf6f44b",transition:{duration:1,delay:.5,type:"spring"}}}>About</motion.h5>
+                <EveryWhereDark/>
                 <div className="container">
                     <div className="left">
                         <p>Im a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.</p>
