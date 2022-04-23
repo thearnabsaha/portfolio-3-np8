@@ -12,7 +12,7 @@ const WorkCard = () => {
                     </div>
                     <div className="button">
                         <a>Visit</a>
-                        <Github className="icon"/>
+                        <Github className="newIcon"/>
                     </div>
                 </div>
             </div>
