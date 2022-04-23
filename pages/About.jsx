@@ -1,34 +1,23 @@
 import { motion} from 'framer-motion'
 import EveryWhere from '../Components/EveryWhere';
 import SPMAN from '../public/assets/Images/spaceman.png';
-import {DarkTheme} from '../Data/themes';
-import styled from 'styled-components';
-import { ThemeProvider } from 'styled-components';
-const Box = styled.div`
-    background-color: ${props => props.theme.body};
-    color: ${props => props.theme.text};
-`;
 const About = () => {
     return (
         <>
-            <ThemeProvider theme={DarkTheme}>
-                <Box>
-                    <motion.div id="about" exit={{y:-1000,transition:{duration:.5}}}>
-                        <motion.h5 className='big' initial={{x:-1000}} animate={{x:0,color:"#fcf6f431",transition:{duration:1,delay:.5,type:"spring"}}}>About</motion.h5>
-                        <EveryWhere/>
-                        <div className="container">
-                            <div className="left">
-                                <p>Im a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.</p>
-                                <p>Im interested in the whole frontend stack Like trying new things and building great projects. Im an independent freelancer and blogger. I love to write blogs and read books.</p>
-                                <p>I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.</p>
-                            </div>
-                            <motion.div className="right">
-                                <motion.img src={SPMAN.src} alt=""  initial={{y:1000,x:1000}} animate={{y:-100,x:-30,transition:{duration:.8}}}/>
-                            </motion.div>
-                        </div>
+            <motion.div id="about" exit={{y:-1000,transition:{duration:.5}}}>
+                <motion.h5 className='big' initial={{x:-1000}} animate={{x:0,transition:{duration:1,delay:.5,type:"spring"}}}>About</motion.h5>
+                <EveryWhere/>
+                <div className="container">
+                    <div className="left">
+                        <p>Im a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.</p>
+                        <p>Im interested in the whole frontend stack Like trying new things and building great projects. Im an independent freelancer and blogger. I love to write blogs and read books.</p>
+                        <p>I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.</p>
+                    </div>
+                    <motion.div className="right">
+                        <motion.img src={SPMAN.src} alt=""  initial={{y:1000,x:1000}} animate={{y:-100,x:-30,transition:{duration:.8}}}/>
                     </motion.div>
-                </Box>
-            </ThemeProvider>
+                </div>
+            </motion.div>
         </>
     );
 }
