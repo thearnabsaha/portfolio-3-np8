@@ -1,6 +1,4 @@
 import '../styles/globals.scss'
-import Link from 'next/link';
-import { PowerBtn} from '../Data/allsvg';
 import { AnimatePresence } from 'framer-motion';
 function MyApp({ Component, pageProps,router }) {
   return <>
