@@ -6,8 +6,8 @@ const Works = () => {
     return (
         <>
             <div id="works">
-            {/* <EveryWhereDark/> */}
-            <EveryWhere/>
+            <EveryWhereDark/>
+            {/* <EveryWhere/> */}
                 <WorkCard/>
             </div>
         </>
