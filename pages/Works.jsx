@@ -8,13 +8,8 @@ const Works = () => {
                 <div className="container">
                     <motion.h5 className='big' initial={{x:-1000}} animate={{x:0,transition:{duration:1,delay:.5,type:"spring"}}}>Skills</motion.h5>
                     <EveryWhereDark/>
-                {/* <EveryWhere/> */}
                     <div className="main">
                         <WorkCard/>
-                        {/* <WorkCard/>
-                        <WorkCard/>
-                        <WorkCard/>
-                        <WorkCard/> */}
                     </div>
                 </div>
             </div>
