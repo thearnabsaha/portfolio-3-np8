@@ -1,24 +1,58 @@
 import { Github } from "../Data/allsvg";
-
+import { PortfolioData } from "../Data/portfolioData";
 const WorkCard = () => {
     return (
-        <div>
-            <div id="workCard">
-                <div className="container">
-                    <h1>Agency Landing Page</h1>
-                    <p>It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.</p>
-                    <div className="hashtags">
-                        <h5>#react #gsap #styledComponents</h5>
-                    </div>
-                    <div className="line"></div>
-                    <div className="button">
-                        <a>Visit</a>
-                        <Github className="newIcon"/>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <>
+            {
+                PortfolioData.map((e)=>{
+                    return(
+                        <>
+                            <div id="workCard">
+                                <div className="container">
+                                    <h1>{e.name}</h1>
+                                    <p>{e.description}</p>
+                                    <div className="hashtags">
+                                        <h5>#react #gsap #styledComponents</h5>
+                                    </div>
+                                    <div className="line"></div>
+                                    <div className="button">
+                                        <a href={e.demo} className="avisit">Visit</a>
+                                        <a href={e.github}><Github className="newIcon"/></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    )
+                })
+            }
+        </>
+
     );
 }
 
-export default WorkCard;
+export default WorkCard
+{/* <div>
+<div id="workCard">
+    <div className="container">
+
+    </div>
+</div>
+</div> */}
+// {
+//     PortfolioData.map((e)=>{
+//         return(
+//             <>
+//                 <h1>{e.name}</h1>
+//                 <p>{e.description}</p>
+//                 <div className="hashtags">
+//                     <h5>#react #gsap #styledComponents</h5>
+//                 </div>
+//                 <div className="line"></div>
+//                 <div className="button">
+//                     <a href={e.demo} className="avisit">Visit</a>
+//                     <a href={e.github}><Github className="newIcon"/></a>
+//                 </div>
+//             </>
+//         )
+//     })
+// }
