@@ -12,7 +12,7 @@ const WorkCard = () => {
                                     <h1>{e.name}</h1>
                                     <p>{e.description}</p>
                                     <div className="hashtags">
-                                        <h5>#react #gsap #styledComponents</h5>
+                                        <h5>{e.tags}</h5>
                                     </div>
                                     <div className="line"></div>
                                     <div className="button">
